@@ -23,7 +23,9 @@ public class SidesCon {
 		System.out.println("TYPE THE SERIAL NUMBER TO GIVE YOUR ORDER! ");
 		
 		int choice=sc.nextInt();
-		System.out.println("You choose \n"+sides.get(choice-1));
+		Item itm =(Item)sides.get(choice-1);
+		
+		System.out.println("You choose \n"+itm.itemName);
 		System.out.println("***************************");
 		
 	}
